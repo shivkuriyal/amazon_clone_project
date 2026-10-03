@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'store/style.css' %}">
+</head>
+<body>
+    <header>
+        <!-- Top utility bar -->
+        <div class="top-bar">
+            <div class="top-bar-links">
+                <a href="#">Kampanyalar</a>
+                <a href="#">Yardım ve Destek</a>
+                <a href="#">Amazon'da Satış Yap</a>
+                <a href="#">Hediye Fikirleri</a>
+            </div>
+        </div>
+
+        <!-- Main navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+                <span class="logo-suffix">.com.tr</span>
+            </div>
+
+            <!-- Delivery address -->
+            <div class="nav-address border">
+                <p class="first">Alıcı: Seden</p>
+                <div class="address-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="second">İstanbul 34956</p>
+                </div>
+            </div>
+
+            <!-- Search bar -->
+            <div class="nav-search">
+                <input type="text" placeholder="Ara Amazon.com.tr" class="search-input">
+                <button class="search-icon" aria-label="Ara">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <!-- Account -->
+            <div class="nav-account border">
+                <i class="fa-solid fa-user nav-user-icon"></i>
+                <div class="nav-account-info">
+                    <p class="nav-account-label">Hesabım <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="nav-cart border">
+                <div class="cart-wrap">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-text-wrap">
+                    <span class="cart-line">Alışveriş</span>
+                    <span class="cart-line">Sepeti</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category panel -->
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                <span>Tümü</span>
+            </div>
+            <div class="panel-links">
+                <a href="#">Kitap</a>
+                <a href="#">Elektronik</a>
+                <a href="#">Moda</a>
+                <a href="#">Ev, Yaşam</a>
+                <a href="#">Bebek, Oyuncak</a>
+                <a href="#">Kişisel Bakım</a>
+                <a href="#">Süpermarket</a>
+                <a href="#">Hobi</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+           <div class="box-content">
+            <h2>Toys Under $30</h2>
+            <div class="box-img" style="background-image: url('{% static 'store/photos/box1.jpg' %}');"></div>
+            <p>Shop now</p>
+           </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img electronics-placeholder"></div>
+                <p>Shop now</p>
+               </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Home &amp; Kitchen</h2>
+                <div class="box-img home-placeholder"></div>
+                <p>Shop now</p>
+               </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Health &amp; Personal Care</h2>
+                <div class="box-img" style="background-image: url('{% static 'store/photos/box4.jpg' %}');"></div>
+                <p>Shop now</p>
+               </div>
+        </div> 
+        <div class="box5 box">
+            <div class="box-content">
+             <h2>Beauty Picks</h2>
+             <div class="box-img" style="background-image: url('{% static 'store/photos/box5.jpg' %}');"></div>
+             <p>Shop now</p>
+            </div>
+         </div>
+         <div class="box6 box">
+             <div class="box-content">
+                 <h2>Refresh your space</h2>
+                 <div class="box-img refresh-placeholder"></div>
+                 <p>Shop now</p>
+                </div>
+         </div>
+         <div class="box7 box">
+             <div class="box-content">
+                 <h2>For your Fitness Needs</h2>
+                 <div class="box-img fitness-placeholder"></div>
+                 <p>Shop now</p>
+                </div>
+         </div>
+         <div class="box8 box">
+             <div class="box-content">
+                 <h2>Discover fashion trends</h2>
+                 <div class="box-img fashion-placeholder"></div>
+                 <p>Shop now</p>
+                </div>
+         </div> 
+         <div class="box5 box">
+            <div class="box-content">
+             <h2>New arrivals in Toys</h2>
+             <div class="box-img" style="background-image: url('{% static 'store/photos/box1.jpg' %}');"></div>
+             <p>Shop now</p>
+            </div>
+         </div>
+         <div class="box6 box">
+             <div class="box-content">
+                 <h2>Shop Laptops &amp; Tablets</h2>
+                 <div class="box-img laptops-placeholder"></div>
+                 <p>Shop now</p>
+                </div>
+         </div>
+         <div class="box7 box">
+             <div class="box-content">
+                 <h2>Smartwatches</h2>
+                 <div class="box-img watches-placeholder"></div>
+                 <p>Shop now</p>
+                </div>
+         </div>
+         <div class="box8 box">
+             <div class="box-content">
+                 <h2>Home refresh ideas</h2>
+                 <div class="box-img" style="background-image: url('{% static 'store/photos/box5.jpg' %}');"></div>
+                 <p>Shop now</p>
+                </div>
+         </div> 
+    </div>
+<br>
+<br>
+
+    <div class="sign-text">
+        <p>See personalized recommendations<p>
+    </div>
+    
+    <div class="sign">
+        <p>Sign up</p>
+    </div>
+    <div class="new">
+        <p>New customer? Start here </p>
+    </div>
+    
+    <footer>
+        <div class="foot-panel1">
+            Back to top
+        </div>
+        
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to know us</p>
+                <a>Careers</a>
+                <a> Blog</a>
+                 <a>About Amazon</a>
+                 <a>Investor Relations</a>
+                 <a>Amazon Devices</a>
+                 <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make money with us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Advertise Your Products</a>
+                <a>Host an Amazon Hub</a>
+                <a>&#x203A;See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+               <a>Amazon Business Card</a>
+               <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let us help you</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account
+                    Your Orders</a>
+                    <a>Shipping Rates &amp; Policies</a>
+                    <a>Returns &amp; Replacements</a>
+                    <a>Manage Your Content and Devices</a>
+                    <a>Amazon Assistant</a>
+                    <a>Help</a>
+
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+           
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads privacy choices</a>
+            </div>
+            <div class="copyright">
+                &copy; 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
